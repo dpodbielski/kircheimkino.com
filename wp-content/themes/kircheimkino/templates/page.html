@@ -1,0 +1,14 @@
+<section class="main-section">
+	<article>
+		{the_content html=1}
+	</article><aside>
+		<ul>
+			{if {the_post key=post_parent}}
+				{list_pages id=submenu child_of={the_post key=post_parent}}
+			{else}
+				{list_pages id=submenu child_of={the_id}}
+			{/if}
+		</ul>
+		{dynamic_sidebar index="aside"}
+	</aside>
+</section>

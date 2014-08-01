@@ -1,0 +1,27 @@
+{
+  "name": "wdAlert",
+  "version": "0.1.1",
+  "homepage": "http://wdscripts.wiredot.com",
+  "authors": [
+    "Piotr Soluch <psoluch@wiredot.com>"
+  ],
+  "description": "Simple jQuery Alert Notifications",
+  "main": "jquery.wdAlert.js",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "alerts",
+    "notifications",
+    "jquery-plugin"
+  ],
+  "license": "MIT",
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.1",
+    "commit": "d9e842765cc1fe8b3f43a55ffb31d4f9fc531232"
+  },
+  "_source": "git://github.com/wiredot/wdAlert.git",
+  "_target": "*",
+  "_originalSource": "wdAlert"
+}

@@ -1,0 +1,85 @@
+/*** variables ***/
+.wdAlert {
+  padding: 10px 10px 5px 10px;
+  margin-bottom: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  z-index: 99999; }
+  .wdAlert:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 8px solid #e47c24;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    margin-left: -8px; }
+  .wdAlert a {
+    text-decoration: none;
+    font-weight: bold; }
+    .wdAlert a:hover {
+      text-decoration: underline; }
+  .wdAlert.info {
+    color: #000000;
+    background-color: #d9edf7;
+    border-color: #bce8f1; }
+    .wdAlert.info:after {
+      border-top-color: #d9edf7; }
+    .wdAlert.info a {
+      color: #2d6987; }
+  .wdAlert.success {
+    color: #000000;
+    background-color: #8cbe14;
+    border-color: #8cbe14; }
+    .wdAlert.success:after {
+      border-top-color: #8cbe14; }
+    .wdAlert.success a {
+      color: #356635; }
+  .wdAlert.warning {
+    color: #000000;
+    background-color: #e47c24;
+    border-color: #e47c24; }
+    .wdAlert.warning:after {
+      border-top-color: #e47c24; }
+    .wdAlert.warning a {
+      color: #000000; }
+  .wdAlert.error {
+    color: #ffffff;
+    background-color: #e47c24;
+    border-color: #e47c24; }
+    .wdAlert.error a {
+      color: black; }
+  .wdAlert .close {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    opacity: 0.4;
+    filter: alpha(opacity=20);
+    text-decoration: none;
+    cursor: pointer; }
+    .wdAlert .close:hover, .wdAlert .close:focus {
+      opacity: 0.6;
+      filter: alpha(opacity=40);
+      text-decoration: none !important; }
+  .wdAlert .title {
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .wdAlert p {
+    margin: 0 0 5px 0; 
+    color: white;}
+  .wdAlert ul {
+    margin: 0 0 5px 0;
+    padding: 0; }
+  .wdAlert li {
+    margin: 0 0 0 19px;
+    padding: 0; }

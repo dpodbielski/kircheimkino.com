@@ -1,0 +1,28 @@
+@include media($tablet-landscape) {
+
+	header {
+
+		nav {
+			ul {
+
+				li {
+
+					&:first-child {
+						display: none;
+					}
+
+					a {
+						padding: 0 15px;
+					}
+				}
+			}
+		}
+	}
+
+	.news {
+
+		li {
+			height: 350px;
+		}
+	}
+}

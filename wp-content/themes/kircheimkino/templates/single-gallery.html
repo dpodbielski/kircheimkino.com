@@ -1,0 +1,18 @@
+<section class="main-section gallery single-gallery">
+	<h2 class="title">{the_title}</h2>
+	{the_content html=1}
+	{post_meta key="images" out="arraytestValues"}
+	<ul>
+			{if $arraytestValues}
+				{foreach from=$arraytestValues item=image key=key}
+					<li>
+						{capture assign=title}{post_meta id=$image key=title}{/capture}
+						{capture assign=caption}{post_meta id=$image key=excerpt}{/capture}
+						<a class="fancybox" rel="gal{the_id}" href="{image id=$image w=960 q=95 title=$title link=1}" title="{$caption}">
+							{image id=$image w=250 h=160 zc=1 q=95 title={the_title}}
+						</a>
+					</li>
+				{/foreach}
+			{/if}
+		</ul>
+</section>

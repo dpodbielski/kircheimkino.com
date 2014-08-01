@@ -1,0 +1,18 @@
+/* ---------- contact ---------- */
+
+.contact {
+
+	aside {
+		@include span-columns(4);
+
+		iframe {
+			width: 100%;
+			height: 345px;
+			margin: $gutter/2 0 0 0;
+		}
+	}
+
+	article {
+		@include span-columns(8);
+	}
+}

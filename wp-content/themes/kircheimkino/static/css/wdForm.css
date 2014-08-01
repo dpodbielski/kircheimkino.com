@@ -1,0 +1,113 @@
+.wdForm .alert
+{
+	padding:8px 35px 8px 14px;
+	margin-bottom:20px;
+	background-color:#fcf8e3;
+	font-family: $open-sans;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.wdForm .alert,.wdForm .alert h4
+{
+	color:#c09853
+}
+
+.wdForm .alert h4
+{
+	margin:0
+}
+
+.wdForm .alert .close
+{
+	position:relative;
+	top:-2px;
+	right:-21px;
+	line-height:20px
+}
+
+.wdForm .alert-success
+{
+	background-color:#bcc6de;
+	color:black
+}
+
+.wdForm .alert-success h4
+{
+	color:black
+}
+
+.wdForm .alert-danger,.wdForm .alert-error
+{
+	background-color:#f2dede;
+	color:black
+}
+
+.wdForm .alert-danger h4,.wdForm .alert-error h4
+{
+	color:black
+}
+
+.wdForm .alert-info
+{
+	background-color:#d9edf7;
+	border-color:#bce8f1;
+	color:#3a87ad
+}
+
+.wdForm .alert-info h4
+{
+	color:#3a87ad
+}
+
+.wdForm .alert-block
+{
+	padding-top:14px;
+	padding-bottom:14px
+}
+
+.wdForm .alert-block>p,.wdForm .alert-block>ul
+{
+	margin-bottom:0
+}
+
+.wdForm .alert-block p+p
+{
+	margin-top:5px
+}
+
+.wdForm button.close
+{
+	padding:0;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	-webkit-appearance:none
+}
+
+.wdForm .close
+{
+	float:right;
+	font-size:20px;
+	font-weight:700;
+	line-height:20px;
+	color:#000;
+	text-shadow:0 1px 0 #fff;
+	opacity:.2;
+	filter:alpha(opacity=20);
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+.wdForm .close:hover,.wdForm .close:focus
+{
+	color:#000;
+	text-decoration:none;
+	cursor:pointer;
+	opacity:.4;
+	filter:alpha(opacity=40)
+}
+
+.wdForm input.error,.wdForm textarea.error
+{
+	border-color:#c00!important
+}

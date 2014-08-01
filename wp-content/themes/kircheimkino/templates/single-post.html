@@ -1,0 +1,37 @@
+<section class="main-section blog">
+<div class="blog_list"><article>
+
+      <h2 class="title">{the_title}</h2>
+{image id={get_post_thumbnail_id} w=800 h=250 q=95 zc=1 alt={the_title} class="img"}
+<div class="blog_info">
+    <div class="blog_date">{get_the_date}</div>{if {the_tags}}<div class="blog_tag">
+   {"Tags"|translate}: {the_tags|replace:'Tags:':''}</div>{/if}{the_terms taxonomy=category id={the_id} assign=terms}{if $terms}<div class="blog_category">
+    {"Categories"|translate}: 
+        {foreach from=$terms item=term name=br}
+          <a href="{$term.link}">{$term.name}</a>{if !$smarty.foreach.br.last}, {/if}
+        {/foreach}
+        </div>{/if}
+  </div>
+  {the_content html="1"}
+
+  <section class="comments">
+    {if {list_comments id={the_id}}}
+    <h3>{"Comments"|translate}</h3>
+      {list_comments id={the_id}}
+    {/if}
+  </section>
+  <section class="reply">
+    <h3>{"Leave a Reply"|translate}</h3>
+    {comment_form}
+   </section>
+    </article></div>
+  <aside>
+  <h3>{"Categories"|translate}</h3>
+    <ul>{blog_categories}</ul>
+  <h3 class="second">{"Tags"|translate}</h3>
+    <ul>{blog_tags}</ul>
+    {dynamic_sidebar index="aside"}
+  </aside>
+</section>
+  
+

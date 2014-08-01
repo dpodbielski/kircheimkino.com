@@ -1,0 +1,64 @@
+/* ---------- page ---------- */
+
+.news {
+
+	li {
+		@include span-columns(4);
+		@include omega(3n);
+
+		p {
+			margin: 0 0 10px 0;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+#news {
+
+	.news {
+
+		li {
+			margin-bottom: $gutter/2;
+		}
+	}
+}
+
+.single-news {
+
+	article {
+		@include span-columns(8);
+
+		.date {
+			padding: 0 0 10px 0;
+		}
+	}
+
+	aside {
+		@include span-columns(4);
+
+		h3 {
+			margin-bottom: $gutter/2;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		ul {
+
+			li {
+				margin-bottom: $gutter/2;
+				border: 0px;
+
+				a {
+					padding: 0;
+				}
+			}
+		}
+	}
+}

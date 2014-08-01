@@ -1,0 +1,13 @@
+<section class="main-section blog">
+	<div class="blog_list"> 
+		{loop}
+		{include file='blog_loop.html'}
+		{/loop}
+	</div><aside>
+		<h3>{"Categories"|translate}</h3>
+		<ul>{blog_categories}</ul>
+		<h3 class="second">{"Tags"|translate}</h3>
+		<ul>{blog_tags}</ul>
+		{dynamic_sidebar index="aside"}
+	</aside>
+</section>

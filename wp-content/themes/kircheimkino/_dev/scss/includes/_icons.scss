@@ -1,0 +1,58 @@
+@charset "UTF-8";
+ 
+@font-face {
+  font-family: "copernicuswiredotcom";
+  src:url("../fonts/copernicuswiredotcom.eot");
+  src:url("../fonts/copernicuswiredotcom.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/copernicuswiredotcom.ttf") format("truetype"),
+    url("../fonts/copernicuswiredotcom.svg#copernicuswiredotcom") format("svg"),
+    url("../fonts/copernicuswiredotcom.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+[data-icon]:before {
+  font-family: "copernicuswiredotcom";
+  content: attr(data-icon);
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+ 
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "copernicuswiredotcom";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+} 
+
+
+.icon-p:before {
+  content: "p";
+}
+
+.icon-t:before {
+  content: "t";
+}
+
+.icon-m:before {
+  content: "m";
+}
+
+.icon-i:before {
+  content: "i";
+}
+
+.icon-s:before {
+  content: "s";
+}
+
+.icon-c:before {
+  content: "c";
+}
+

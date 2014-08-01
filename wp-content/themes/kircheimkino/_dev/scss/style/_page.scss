@@ -1,0 +1,86 @@
+/* ---------- page ---------- */
+
+aside {
+
+	ul {
+
+		li {	
+			border-bottom: 2px solid $bg;
+			position: relative;
+
+			a {
+				display: block;
+				color: #000;
+				padding: 10px 5px;
+				@include transition(all 0.2s ease-in-out);
+				line-height: 22px;
+				font-size: 17px;
+				color: $main-color;
+
+				&:hover {
+					color: black;
+					background-color: $bg;
+				}
+			}
+
+			&.current_page_item , &.current-cat{
+
+				a {
+					background-color: $bg;
+				}
+			}
+
+			&:last-child {
+				border-bottom: 0px;
+			}
+
+			ul {
+				margin-top: 0px;
+				padding: 0px;
+
+				li {
+					border-bottom: 0px;
+
+					a {
+						padding: 5px 0px 5px 20px;
+						font-size: 14px;
+						line-height: 18px;
+
+						&:hover {
+							background: none;
+							color: $bg-d;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+article {
+
+	ul, ol {
+		padding: 0 0 $gutter/2 $gutter/2;
+
+		li {
+			line-height: 1.4;
+			list-style: disc;
+			margin: 0 0 0 $gutter/2;
+		}
+	}
+
+	ol {
+
+		li {
+			list-style: decimal;
+		}
+	}
+}
+
+.e404 {
+	text-align: center;
+	
+	h1, p {
+		text-align: center;
+	}
+}

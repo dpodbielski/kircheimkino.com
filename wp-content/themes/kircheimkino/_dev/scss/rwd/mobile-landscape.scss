@@ -1,0 +1,174 @@
+@include media($mobile-landscape) {
+
+	header {
+		z-index: 9999;
+				position: relative;
+		nav {
+			z-index: 9999;
+			position: relative;
+
+			ul {
+				display: none;
+				z-index: 9999;
+				position: relative;
+				background-color: $main-color;
+
+				li {
+					display: block;
+					text-align: center;
+					height: auto;
+					line-height: 40px;
+
+					&:first-child {
+						display: block;
+					}
+
+					a {
+						height: auto;
+						line-height: 40px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	.show_menu {
+		display: block;
+		color: #fff;
+		font-family: $open-sans-light;
+		line-height: 70px;
+		height: 70px;
+		padding: 0 20px;
+		@include transition (all 0.2s ease-in-out);
+		display: block;
+		font-size: 18px;
+		text-transform: lowercase;
+		text-align: center;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $main-color-l;
+			color: white;
+		}
+	}
+
+	#header_img {
+
+		#header_tools {
+			z-index: -1;
+			position: relative;
+
+			section {
+
+				#lang {
+					
+				}
+
+				#search_form {
+					display: none;
+					position: absolute;
+					right: 2%;
+				}
+			}
+		}
+	}
+
+	.max {
+		height: 480px; 
+
+		.previous {
+			left: 2% ; 
+		}
+
+		.next {
+			right: 2%; 
+		}
+	}
+	.wdSlider {
+
+		h3 {
+			font-size: 20px;
+			line-height: 40px;
+		}
+
+		h4 {
+			font-size: 15px;
+		}
+	}
+	.show_search_form {
+		display: block;
+		float: right;
+		background: url('../images/sprites.png') no-repeat;
+		background-position: -7px -67px;
+		width: 31px;
+		height: 31px;
+		text-indent: -9999px;
+		cursor: pointer;
+		margin: 10px 0 0 10px;
+
+		&:hover {
+			background-position: -7px -117px;
+		}
+	}
+
+	.news {
+
+		li {
+			@include span-columns(12);
+			margin: 0 0 $gutter 0;
+			min-height: auto !important;
+			height: auto !important;
+		}
+	}
+
+	.main-section {
+
+		aside {
+			@include span-columns(12);
+		}
+
+		article {
+			@include span-columns(12);
+			margin: 0 0 $gutter/2 0;
+
+			&.half {
+				@include span-columns(12);
+				margin: 0 0 $gutter/2 0;
+			}
+		}
+	}
+
+	footer {
+
+		.menu {
+			display: none;
+		}
+
+		section {
+
+			article {
+				@include span-columns(12);
+				margin: 0 0 $gutter/2 0;
+			}
+		}
+	}
+
+	.blog {
+
+		.blog_list {
+			@include span-columns(12);
+		}
+	}
+
+	input[type="text"],input[type="email"],textarea {
+		width: 100%;
+	}
+
+	.gallery {
+
+		li {
+			@include span-columns(12);
+		}
+	}
+}

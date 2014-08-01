@@ -1,0 +1,6 @@
+[submodule "wp-content/plugins/copernicus"]
+	path = wp-content/plugins/copernicus
+	url = git@github.com:wiredot/copernicus.git
+[submodule "wp-content/themes/copernicus-start"]
+	path = wp-content/themes/copernicus-start
+	url = git@github.com:wiredot/copernicus-start.git

@@ -1,0 +1,8 @@
+<section class="main-section">
+	{loop template="loop_search.html"}
+	<div class="searchresults">
+		<h3><a href="{get_permalink}">{the_title}</a></h3>
+			<p>{{post_meta key="content"}|strip_tags|truncate:300}</p>
+	</div>
+	{/loop}
+</section>

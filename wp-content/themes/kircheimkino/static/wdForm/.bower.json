@@ -1,0 +1,26 @@
+{
+  "name": "wdForm",
+  "version": "0.1.1",
+  "homepage": "http://wdscripts.wiredot.com",
+  "authors": [
+    "Piotr Soluch <psoluch@wiredot.com>"
+  ],
+  "description": "Simple jQuery Forms Plugin",
+  "main": "jquery.wdForm.js",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "forms",
+    "jquery-plugin"
+  ],
+  "license": "MIT",
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.1",
+    "commit": "a6f4c90a45cdfcf9a4beaecb63168683f5defc53"
+  },
+  "_source": "git://github.com/wiredot/wdForm.git",
+  "_target": "*",
+  "_originalSource": "wdForm"
+}

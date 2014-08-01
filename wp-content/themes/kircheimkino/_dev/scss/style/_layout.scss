@@ -1,0 +1,53 @@
+/* ---------- layout ---------- */
+
+.main-section {
+	@include outer-container;
+	margin: $gutter auto;
+
+	aside {
+		@include span-columns(3);
+		margin-bottom: $gutter;
+
+		h3 {
+			font-size: 30px;
+			font-family: $open-sans-light;
+			color:#6f8498;
+			line-height: 35px;
+			display: block;
+			margin-bottom: 10px;
+
+			&.second {
+				margin-top: $gutter;
+			}
+		}
+
+		h4 {
+			font-size: 18px;
+			font-family: $open-sans;
+			color:$main-color;
+			line-height: 24px;
+			display: block;
+		}
+	}
+
+	article {
+		@include span-columns(9);
+		margin-bottom: $gutter;
+
+		&.half {
+			@include span-columns(6);
+			margin-bottom: $gutter;
+		}
+	}
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -290px; 
+
+  &:after {
+	  content:"";
+	  display: block;
+	  height: 290px; 
+	}
+}

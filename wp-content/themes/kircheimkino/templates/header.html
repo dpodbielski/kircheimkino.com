@@ -1,0 +1,20 @@
+<div class="page-wrap">
+	<aside>
+		<nav id="main-nav">
+			{nav_menu location="aside"}
+		</nav>
+		<h2>Adresse</h2>
+		<address><strong>Kirche im Kino</strong><br />Kino Linde<br />5400 Baden</address>
+		<p><a href="mailto:info@kircheimkino.com">info@kircheimkino.com</a><br />0041 56 288 02 10</p>
+	</aside>
+
+	<header>
+		<a href="{home_url}" id="logo">Kirche im Kino</a>
+		<div id="next-event">
+			<h2>Nächster Sonntag</h2>
+			{loop  name=events}
+				{include file='events_loop.html'}
+			{/loop}
+		</div>
+	</header>
+

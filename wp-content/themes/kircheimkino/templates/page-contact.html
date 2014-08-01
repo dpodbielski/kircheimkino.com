@@ -1,0 +1,24 @@
+<section class="main-section contact">
+	<aside>
+		{the_content html="1"}
+		{if {post_meta key=address}}
+		<iframe src="https://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q={post_meta key=address}&amp;aq=&amp;ie=UTF8&amp;hq=&amp;hnear={post_meta key=address}&amp;t=m&amp;z=12&amp;iwloc=near&amp;output=embed" height="345" width="345"></iframe>
+		<a href="https://maps.google.pl/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=zurich&amp;aq=&amp;ie=UTF8&amp;hq=&amp;hnear={post_meta key=address}&amp;t=m&amp;z=12&amp;iwloc=A">View Larger Map</a>{/if}
+	</aside><article>
+		<div id="main-content">
+			<h1>Kontakt</h1>
+			<form action="/wp-admin/admin-ajax.php?action=msb_send_message" class="wdForm">
+				<fieldset>
+					<input id="name" name="name" type="text" placeholder="{"Name"|translate}"/>
+					<input id="email" name="email" type="text" placeholder="{"E-Mail"|translate}"/>
+					<input id="betreff" name="betreff" type="text" placeholder="{"Betreff"|translate}"/>
+					<textarea id="message" name="message" placeholder="{"Text"|translate}"></textarea>
+
+					<input type="submit" name="senden" value="{"Senden"|translate}" />
+
+					<input type="hidden" name="timer" id="timer" value="0">
+				</fieldset>
+			</form>
+		</div>
+	</article>
+</section>

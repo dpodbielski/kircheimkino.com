@@ -1,0 +1,57 @@
+/* ########## wiredot ########## */
+
+@import 'bourbon/bourbon';
+@import 'includes/grid-settings';
+@import 'neat/neat';
+
+//* ========== HELPERS ========== */
+
+@import 'includes/reset'; // load variables
+@import 'includes/fonts'; // load fonts
+@import 'includes/icons'; // load icons
+@import 'includes/variables'; // load variables
+
+$tablet-landscape: new-breakpoint(max-width 1024px 12);
+$tablet-middle: new-breakpoint(max-width 910px 12);
+$tablet-portrait: new-breakpoint(max-width 768px 12);
+$mobile-landscape: new-breakpoint(max-width 480px 12);
+$mobile-portrait: new-breakpoint(max-width 320px 12);
+
+/* ========== STYLES ========== */
+
+@import 'style/forms'; // load forms styles
+
+@import 'style/global'; // load global styles
+
+@import 'style/layout'; // load layout styles
+
+@import 'style/header'; // load header styles
+
+@import 'style/footer'; // load footer styles
+
+@import 'style/page'; // load page styles
+
+@import 'style/home'; // load home styles
+
+@import 'style/news'; // load news styles
+
+@import 'style/gallery'; // load gallery styles
+
+@import 'style/blog'; // load blog styles
+
+@import 'style/contact'; // load contact styles
+
+@import 'style/wdAlert.scss';
+
+
+/* ========== MEDIA QUERIES ========== */
+
+@import "rwd/tablet-landscape"; // load tablet landscape wiev  
+
+@import "rwd/tablet-middle"; // load tablet portrait wiev
+
+@import "rwd/tablet-portrait"; // load tablet portrait wiev
+
+@import "rwd/mobile-landscape"; // load mobile landscape wiev
+
+@import "rwd/mobile-portrait"; // load mobile portrait wiev 

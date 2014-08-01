@@ -1,0 +1,31 @@
+/* ---------- page ---------- */
+
+.gallery {
+
+	li {
+		@include span-columns(3);
+		@include omega(4n);
+		margin-bottom: $gutter/2;
+
+		p {
+			margin: 0 0 10px 0;
+			display: block;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		h3 {
+			padding-bottom: 10px;
+		}
+	}
+}
+
+.single-gallery {
+
+	li {
+		margin-bottom: $gutter;
+	}
+}

@@ -1,0 +1,29 @@
+@include media($tablet-landscape) {
+
+	header {
+		
+		nav,  {
+			margin: 0 2%;
+		}
+	}
+
+	#header_tools {
+		padding: 0 2%;
+	}
+	.main-section {
+		margin: $gutter 2% 0 2%;
+	}
+	.page_title {
+		margin: 0 2%;
+	}
+	footer {
+
+		.menu, section {
+			padding: 0 2%;
+		}
+
+		section {
+			padding-top: $gutter/2;
+		}
+	}
+}

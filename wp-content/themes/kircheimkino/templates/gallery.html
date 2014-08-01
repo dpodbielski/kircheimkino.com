@@ -1,0 +1,12 @@
+<section class="main-section">
+	<ul class="gallery">
+	{loop name="gallery"}
+		<li>
+			<a href="{get_permalink}">{image id={get_post_thumbnail_id} w=250 h=160 q=95 zc=1 alt={the_title}}</a>
+			<h3>{the_title}</h3>
+			{the_content html="1"}
+			<a href="{get_permalink}" class="read_more">{"more photos"|translate}</a>
+		</li>
+	{/loop}
+	</ul>
+</section>
